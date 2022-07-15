@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Chris Shaw
+Mobile Programming
+3/18/20
+Study Helper App
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-drawable"
+    tools:context="edu.lwtech.studyhelper.SubjectActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/subjectRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addSubjectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addSubjectClick"
+        android:layout_gravity="end|bottom"
+        app:src="@drawable/add"
+        android:layout_margin="16dp" />
+
+</FrameLayout>
